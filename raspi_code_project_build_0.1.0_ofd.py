@@ -9,15 +9,15 @@ def error():
     quit()
 import os
 if os.path.exists("/usr/local/bin/") == True:
-    if os.path.exists("/usr/local/bin/raspi_project_by_animmjfan") == True:
+    if os.path.exists("/usr/local/bin/raspi_project_by_animmjfan/") == True:
         pass
-    elif os.path.exists("/usr/local/bin/raspi_project_by_animmjfan") == False:
-        os.mkdir("/usr/local/bin/raspi_project_by_animmjfan")
+    elif os.path.exists("/usr/local/bin/raspi_project_by_animmjfan/") == False:
+        os.mkdir("/usr/local/bin/raspi_project_by_animmjfan/")
     else:
         error()
 elif os.path.exists("/usr/local/bin/") == False:
-    os.mkdir("/usr/local/bin")
     os.mkdir("/usr/local/bin/")
+    os.mkdir("/usr/local/bin/raspi_project_by_animmjfan/")
 else:
     error()
 while throwawayvar == True:
