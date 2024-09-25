@@ -20,16 +20,15 @@ elif os.path.exists("/usr/local/bin/") == False:
     os.mkdir("/usr/local/bin/raspi_project_by_animmjfan/")
 else:
     error()
+import subprocess
 while throwawayvar == True:
     with open("/usr/local/bin/raspi_project_by_animmjfan/importfrompi/on-off.txt", 'r') as file:
         content = file.read().strip()
-    content = bool(content)
-    print(content)
-    if content == True:
+    content
+    if content == "1":
+        subprocess.call('./usr/local/raspi_project_by_animmjfan/scripts/pwrON.sh')
+    elif content == "0":
+        subprocess.call('./usr/local/raspi_project_by_animmjfan/scripts/pwrOFF.sh')
+    elif content == "2":
         pass
-        # change pass later to the usb power on code
-    elif content == False:
-        pass
-        # change pass later to the usb power off code
-    else:
-        error()
+    file.write("2")
