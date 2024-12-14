@@ -10,26 +10,26 @@ def error():
     quit()
 import os
 if os.path.exists("/usr/local/bin/") == True:
-    if os.path.exists("/usr/local/bin/raspi_project_by_animmjfan/") == True:
+    if os.path.exists("/usr/local/bin/animmjfan/raspi_project_by_animmjfan/") == True:
         pass
-    elif os.path.exists("/usr/local/bin/raspi_project_by_animmjfan/") == False:
-        os.mkdir("/usr/local/bin/raspi_project_by_animmjfan/")
+    elif os.path.exists("/usr/local/bin/animmjfan/raspi_project_by_animmjfan/") == False:
+        os.mkdir("/usr/local/bin/animmjfan/raspi_project_by_animmjfan/")
     else:
         error()
 elif os.path.exists("/usr/local/bin/") == False:
     os.mkdir("/usr/local/bin/")
-    os.mkdir("/usr/local/bin/raspi_project_by_animmjfan/")
+    os.mkdir("/usr/local/bin/animmjfan/raspi_project_by_animmjfan/")
 else:
     error()
 import subprocess
 while throwawayvar == True:
-    with open("/usr/local/bin/raspi_project_by_animmjfan/importfrompi/on-off.txt", 'r') as file:
+    with open("/usr/local/bin/animmjfan/raspi_project_by_animmjfan/importfrompi/on-off.txt", 'r') as file:
         content = file.read().strip()
     content
     if content == "1":
-        subprocess.call('./usr/local/raspi_project_by_animmjfan/scripts/pwrON.sh')
+        subprocess.call('./usr/local/animmjfan/raspi_project_by_animmjfan/scripts/pwrON.sh')
     elif content == "0":
-        subprocess.call('./usr/local/raspi_project_by_animmjfan/scripts/pwrOFF.sh')
+        subprocess.call('./usr/local/animmfan/raspi_project_by_animmjfan/scripts/pwrOFF.sh')
     elif content == "2":
         pass
     file.write("2")
