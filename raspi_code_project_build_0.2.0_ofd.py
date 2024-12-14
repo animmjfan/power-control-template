@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #this code is to be run off device in this case "device" is a raspi the raspi this project is made for is the raspi zero w 1.1 but any raspi zero w should work
 #if anything goes wrong email me at anthonyfalzon12@icloud.com with your issuse and/or report it on github
 #hope you like it...
