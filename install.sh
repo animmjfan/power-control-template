@@ -50,12 +50,16 @@ echo 'starting install'
 echo 'starting checks'
 echo "checking the existance of the install path at '$install_path'"
 if [ ! -d $install_path ]; then
-	echo "$install_path doesn't exist yet, making it"
-	mkdir $install_path
-	echo "$install_path was made"
+	echo "$install_path doesn't exist yet, making it..."
+	mkdir $install_path >/dev/null
+	if [ $? -eq 0 ]; then
+		echo "$install_path was made successfully"
+	else; then
+		echo "An error occurred while trying to make '$install_path'"
+	fi 
 elif [ -d $install_path ]; then
-	echo "$install_path already exists, skipping"
+	echo "$install_path already exists, skipping it"
 fi
-
+# continue on making the rest of the things that need to be checked for, made, and move scripts from the user setup and default files to the libary folder
 
 echo "Welcome to $program_name!"
