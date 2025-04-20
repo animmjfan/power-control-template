@@ -2,7 +2,7 @@
 
 #if anything goes wrong email me at animmjfan@gmail.com with your issuse and/or report it on github
 #hope you like it...
-#...and it works! pls!
+#...and hope it works! pls!
 
 import subprocess
 
