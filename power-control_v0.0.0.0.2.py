@@ -7,13 +7,13 @@
 import subprocess
 
 while True:
-    with open("/usr/local/lib/animmjfan/power-control/on-off.txt", 'r') as file:
+    with open("/usr/local/lib/power-control/on-off.txt", 'r') as file:
         content = file.read().strip()
     content
     if content == "1":
-        subprocess.call('./usr/local/lib/animmjfan/power-control/scripts/pwrON.sh')
+        subprocess.call('./usr/local/lib/power-control/scripts/pwrON.sh')
     elif content == "0":
-        subprocess.call('./usr/local/lib/animmfan/power-control/scripts/pwrOFF.sh')
+        subprocess.call('./usr/local/lib/power-control/scripts/pwrOFF.sh')
     elif content == "2":
         pass
     file.write("2")
