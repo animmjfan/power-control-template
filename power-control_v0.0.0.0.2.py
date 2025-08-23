@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-#if anything goes wrong email me at animmjfan@gmail.com with your issuse and/or report it on github
-#hope you like it...
-#...and hope it works! pls!
+# if anything goes wrong email me at animmjfan@gmail.com with your issuse and/or report it on github
+# hope you like it...
+# ...and hope it works! pls!
 
 import subprocess
 
