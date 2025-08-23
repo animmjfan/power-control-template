@@ -37,12 +37,7 @@ elif [[ $status == 'custom' ]]; then
 	echo "Okay then!"
 fi
 
-newline () {
-	echo
-}
-
-newline
-newline
+echo -e '\n' # creates two newlines
 install_path=$(realpath $install_path)
 libary_folder=$(realpath $libary_folder)
 binary_folder=$(realpath $binary_folder)
