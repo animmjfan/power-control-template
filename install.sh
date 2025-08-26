@@ -5,7 +5,7 @@
 #########################
 
 # This script manually makes the required directories, folders and files for the script to run!
-# by default this works under /usr/loca/ and uses /usr/local/bin and /usr/local/lib and under /usr/local/lib
+# by default this works under /usr/local/ and uses /usr/local/bin and /usr/local/lib and under /usr/local/lib
 # you can modify the name and path using variables and to get the default you keep install_ver='default' if you want your changes to apply change it to install_ver='custom'
 
 program_name='Power control'
