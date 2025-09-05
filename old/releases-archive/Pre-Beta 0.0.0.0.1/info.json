@@ -1,0 +1,23 @@
+{
+	"name": "Pre-Beta 0.0.0.0.1",
+	"Pre-release": true,
+	"date": "Sep 19, 2024",
+	"author": "@animmjfan",
+	"tag": "v0.0.0.0.1-alpha",
+	"commit": "69a2e4d",
+	"assets": {
+		"raspi_code_project_build_0.0.0.0.2.py": {
+			"size": "1.31 KB",
+			"date": "Sep 25, 2024",
+			"path": "Assets/raspi_code_project_build_0.0.0.0.1.py"
+		},
+		"Source code (zip)": {
+			"date": "Dec 15, 2024",
+			"path": "Assets/power-control-template-0.0.0.0.1-alpha.zip"
+		},
+		"Source code (tar.gz)": {
+			"date": "Dec 15, 2024",
+			"path": "Assets/power-control-template-0.0.0.0.1-alpha.tar.gz"
+		}
+	}
+}
